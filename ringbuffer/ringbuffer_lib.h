@@ -2,7 +2,6 @@
 #ifndef RINGBUFFER_LIB_H
 #define RINGBUFFER_LIB_H
 
-#include <cstddef>
 #include <stdexcept>
     class RingBuffer {
     private:
