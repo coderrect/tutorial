@@ -4,11 +4,12 @@
 
     RingBuffer::RingBuffer(size_t capacity) : capacity_(capacity) {
         if (capacity == 0)
-            throw std::invalid_argument("capacity must be greater than 0");
-
-        buffer_ = new int[capacity];
-        available_ = 0;
-        write_pos_ = 0;
+            printf("capacity must be greater than 0!\n");
+	else {
+            buffer_ = new int[capacity];
+            available_ = 0;
+            write_pos_ = 0;
+	}
     }
     RingBuffer::~RingBuffer() {
         if (buffer_ != nullptr)

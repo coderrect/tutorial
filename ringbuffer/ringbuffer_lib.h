@@ -2,7 +2,9 @@
 #ifndef RINGBUFFER_LIB_H
 #define RINGBUFFER_LIB_H
 
-#include <stdexcept>
+#include<stdlib.h>
+#include<stdio.h>
+
     class RingBuffer {
     private:
         int *buffer_;
